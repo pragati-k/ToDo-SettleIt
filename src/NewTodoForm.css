@@ -1,0 +1,50 @@
+.NewTodoForm {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .NewTodoForm label {
+    min-width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .NewTodoForm input {
+    text-align: center;
+    font-size: 13px;
+    color: #2980b2;
+    background: none;
+    flex-grow: 1;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px dashed #45c5c5;
+  }
+  .NewTodoForm input:focus{
+    background: none;
+    border-bottom: 3px dashed #02456e;
+    outline: none;
+}
+  .NewTodoForm button {
+    padding: 0 1.3rem;
+    font-size: 13px;
+    border-radius: 10px;
+    background: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background 0.4s ease-out;
+    outline: none;
+  }
+  .NewTodoForm button:hover {
+    background: rgba(22, 175, 142, 0.589);
+  }
+  .NewTodoForm input,
+  .NewTodoForm button {
+    font-family: "Quicksand", sans-serif;
+    height: 2.5rem;
+  }
+  

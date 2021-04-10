@@ -1,0 +1,121 @@
+.TodoList {
+    margin: 4rem auto;
+    padding: 2rem 3rem 3rem;
+    max-width: 600px;
+    background: transparent;
+    color: black;
+    overflow: hidden;
+}
+
+.TodoList ul {
+    margin-top: 2.6rem;
+    list-style: none;
+}
+
+.TodoList h1 {
+    background: rgba(22, 175, 142, 0.589);
+    color: black;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 24px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.todo-enter {
+    opacity: 0;
+}
+
+.todo-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.todo-exit {
+    opacity: 1;
+}
+
+.todo-exit-active {
+    /* opacity: 0; */
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 500ms ease-in-out;
+}
+
+.Todo .Todo-buttons i {
+    display: inline-block;
+}
+
+.form-enter {
+    transform: translateY(77px);
+    transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    position: absolute;
+}
+
+.form-enter-active {
+    transform: translateY(0%);
+    transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    position: absolute;
+}
+
+.form-exit {
+    transform: translateY(0%);
+    position: absolute;
+}
+
+.form-exit-active {
+    transform: translateY(77px);
+    transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    position: absolute;
+}
+
+.task-text-enter {
+    transform: translateY(-77px);
+    position: absolute;
+}
+
+.task-text-enter-active {
+    transform: translateY(0);
+    transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    position: absolute;
+}
+
+.task-text-exit {
+    transform: translateY(0);
+    position: absolute;
+}
+
+.task-text-exit-active {
+    transform: translateY(-77px);
+    position: absolute;
+    transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.deleteAll{
+    float: left;
+}
+
+.markAllComplete{
+    float: right;
+}
+
+button {
+    height: 2.5rem;
+    padding: 0 0.8rem;
+    border-radius: 10px;
+    background: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background 0.4s ease-out;
+    outline: none;
+}
+
+button:hover {
+    background: rgba(22, 175, 142, 0.589);
+}
